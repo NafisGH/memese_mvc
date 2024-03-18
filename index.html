@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="column-setup">
+            <h2 class="column-setup__header">Настройки:</h2>
+
+                <p>Memes</p>
+                <form action="">
+                    <div class="column-setup__mems __select" data-state="">
+                        <div class="__select__title" data-default="Категория">Memes</div>
+
+                        <div class="__select__content" id="memesSelect">
+
+                        </div>
+
+                    </div>
+                </form>
+
+                <div>
+                    <p><label for="text-up">Текст сверху</label></p>
+                    <p><input class="column-setup__input-text-up" type="text" id="text-up"></p>
+                </div>
+                <div>
+                    <p><label for="text-dawn">Текст снизу</label></p>
+                    <p><input class="column-setup__input-text-dawn" type="text" id="text-dawn"></p>
+                </div>
+
+        </div>
+
+        <div class="column-preview">
+            <h2>Превью:</h2>
+        </div>
+    </div>
+    
+
+    <script src="menuList.js"></script>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="api.js"></script>
+    <script src="controller.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
 </head>
+
 <body>
+    <h1>Hello</h1>
 
     <div class="container">
         <div class="column-setup">
             <h2 class="column-setup__header">Настройки:</h2>
 
-                <p>Memes</p>
-                <form action="">
-                    <div class="column-setup__mems __select" data-state="">
-                        <div class="__select__title" data-default="Категория">Memes</div>
+            <div>
+                <p><label for="text-up">Текст сверху</label></p>
+                <p><input class="column-setup__input-text-up" type="text" id="text-up"></p>
+            </div>
+            <div>
+                <p><label for="text-dawn">Текст снизу</label></p>
+                <p><input class="column-setup__input-text-dawn" type="text" id="text-dawn"></p>
+            </div>
+            <div><button class="btn-add-text">Добавить текст</button></div>
 
-                        <div class="__select__content" id="memesSelect">
+            <form action="">
+                <div class="column-setup__mems __select" data-state="">
+                    <div class="__select__title" data-default="Категория">Memes</div>
 
-                        </div>
+                    <div class="__select__content" id="memesSelect">
 
                     </div>
-                </form>
-
-                <div>
-                    <p><label for="text-up">Текст сверху</label></p>
-                    <p><input class="column-setup__input-text-up" type="text" id="text-up"></p>
                 </div>
-                <div>
-                    <p><label for="text-dawn">Текст снизу</label></p>
-                    <p><input class="column-setup__input-text-dawn" type="text" id="text-dawn"></p>
-                </div>
-
+            </form>
         </div>
 
         <div class="column-preview">
             <h2>Превью:</h2>
+            <div class="wrapper-foto">
+                <img class="meme-foto" src="" alt="meme-foto">
+                <p class="text-up"></p>
+                <p class="text-dawn"></p>
+            </div>
         </div>
-    </div>
-    
 
-    <script src="menuList.js"></script>
+    </div>
+
+
     <script src="model.js"></script>
     <script src="view.js"></script>
     <script src="api.js"></script>
     <script src="controller.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

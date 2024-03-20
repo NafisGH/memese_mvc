@@ -1,12 +1,12 @@
 class Model {
-    constructor({onMemsChange}) {
-        this.mems = []
-        this.onMemsChange = onMemsChange
-    }
+  constructor({ onMemsChange }) {
+    this.mems = [];
+    this.onMemsChange = onMemsChange;
+  }
 
-    setMems(mems) {
-        this.mems = mems
+  setMems(mems) {
+    this.mems = mems;
 
-        this.onMemsChange(this.mems)
-    }
+    this.onMemsChange(this.mems);
+  }
 }

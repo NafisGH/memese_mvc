@@ -1,3 +1,3 @@
-const app = new Controller()
+const app = new Controller();
 
-app.init()
+app.init();
